@@ -1,6 +1,8 @@
 
-<% if @preference.song_sort_order == "" %>
-
+<% if @preference.song_sort_order == "ASC" %>
+  <% @songs.sort %>
+<% else %>
+  <% @songs.sort %>
 <% end %>
 
 <ul>
