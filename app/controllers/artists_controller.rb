@@ -8,7 +8,7 @@ class ArtistsController < ApplicationController
   end
 
   def new
-    puts "Preferences = #{Preference.all}"
+    puts "Preferences = #{Preference.all.count}"
     @artist = Artist.new
   end
 
