@@ -1,6 +1,7 @@
 
 <% if @preference.song_sort_order == "ASC" %>
-  <% @songs.sort %>
+  <% @songs.sort_by! {|x, y| x.name <=> y.name} %>
+
 <% else %>
   <% @songs.sort %>
 <% end %>
