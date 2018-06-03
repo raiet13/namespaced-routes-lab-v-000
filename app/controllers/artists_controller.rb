@@ -8,6 +8,7 @@ class ArtistsController < ApplicationController
   end
 
   def new
+    puts "Preferences = #{Preference.all}"
     @artist = Artist.new
   end
 
